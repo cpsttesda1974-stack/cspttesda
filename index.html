@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CPST</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="font-['Quicksand']">
+    <nav class="fixed w-screen bg-[#004e64] z-20 w-full max-w-full">
+      <div class="text-center md:px-36">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="newwww png.png" class="h-10" alt="Flowbite Logo" />
+            <span
+              class="self-center text-2xl font-extrabold whitespace-nowrap dark:text-white"
+            ></span>
+          </a>
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+
+          <!-- data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false" -->
+
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul
+              class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0"
+            >
+            <li>
+                <a
+                  href="newsfeed.html"
+                  data-aos="fade-down"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Newsfeed</a
+                >
+              </li>
+
+
+              <li>
+                <a
+                  href="#"
+                  data-aos="fade-down"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                  class="block py-2 px-3 text-white rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#course"
+                  data-aos="fade-down"
+                  data-aos-duration="2000"
+                  data-aos-easing="ease-in-out"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Course
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#Scholarship"
+                  data-aos="fade-down"
+                  data-aos-duration="3000"
+                  data-aos-easing="ease-in-out"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Scholarship</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#staff"
+                  data-aos="fade-down"
+                  data-aos-duration="3000"
+                  data-aos-easing="ease-in-out"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Staff</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#About"
+                  data-aos="fade-down"
+                  data-aos-duration="3000"
+                  data-aos-easing="ease-in-out"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >About</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Include this script tag or install `@tailwindplus/elements` via npm: -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> -->
+ 
+
+
+    <!-- bg-cover bg-center min-h-screen md:bg-center bg-no-repeat bg-[url('wall.jpg')] md:bg-[url('bg.png')] -->
+    <section
+      class="relative h-90 grid place-items-center z-6 md:h-full md:bg-center bg-white bg-no-repeat bg-[url('wall.jpg')]"
+      style="background-repeat: no-repeat; background-size: cover"
+    >
+      <div class="absolute inset-0 bg-black/50 z-0"></div>
+      <div
+        class="relative md:flex grid place-items-center md:px-40 md:h-screen px-3"
+      >
+        <div class="text-center md:text-center text-white">
+          <b
+            class="text-xl"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            >Welcome to</b
+          >
+          <div
+            class="mt-2"
+            data-aos="fade-in"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+          >
+            <b class="font-bold md:text-6xl text-xl font-family: Arial"
+              >CENTRAL PANGASINAN SCHOOL OF TECHNOLOGY</b
+            >
+          </div>
+
+          <div
+            class="mt-2"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+          >
+            <b class="text-xl">Established 1974</b>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[#f1faee] py-2 px-2 w-full max-w-full overflow-hidden">
+      <!-- Mobile Carousel (shown on small screens) -->
+      <div
+        id="default-carousel"
+        class="relative w-full md:hidden"
+        data-carousel="slide"
+      >
+        <!-- Carousel wrapper -->
+        <div
+          class="relative h-56 sm:h-64 md:h-96 overflow-hidden rounded-lg z-1"
+        >
+          <!-- Item 1 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="a1.jpg"
+              class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="Image 1"
+            />
+          </div>
+          <!-- Item 2 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="a2.jpg"
+              class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="Image 2"
+            />
+          </div>
+          <!-- Item 3 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="a3.jpg"
+              class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="Image 3"
+            />
+          </div>
+          <!-- Item 4 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="a5.jpg"
+              class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="Image 4"
+            />
+          </div>
+          <!-- Item 5 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="a4.jpg"
+              class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="Image 5"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Desktop Grid (shown on medium screens and up) -->
+      <div
+        class="hidden md:flex flex-wrap justify-center gap-4 lg:gap-6 xl:gap-8 max-w-7xl mx-auto"
+      >
+        <div
+          class="w-full sm:w-[45%] md:w-[30%] lg:w-[22%] xl:w-[18%] transition-all duration-300 hover:scale-105"
+        >
+          <img
+            class="w-full h-48 sm:h-56 md:h-48 lg:h-56 xl:h-64 object-cover rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
+            src="a1.jpg"
+            alt="Image 1"
+          />
+        </div>
+        <div
+          class="w-full sm:w-[45%] md:w-[30%] lg:w-[22%] xl:w-[18%] transition-all duration-300 hover:scale-105"
+        >
+          <img
+            class="w-full h-48 sm:h-56 md:h-48 lg:h-56 xl:h-64 object-cover rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
+            src="a2.jpg"
+            alt="Image 2"
+          />
+        </div>
+        <div
+          class="w-full sm:w-[45%] md:w-[30%] lg:w-[22%] xl:w-[18%] transition-all duration-300 hover:scale-105"
+        >
+          <img
+            class="w-full h-48 sm:h-56 md:h-48 lg:h-56 xl:h-64 object-cover rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
+            src="a3.jpg"
+            alt="Image 3"
+          />
+        </div>
+        <div
+          class="w-full sm:w-[45%] md:w-[30%] lg:w-[22%] xl:w-[18%] transition-all duration-300 hover:scale-105"
+        >
+          <img
+            class="w-full h-48 sm:h-56 md:h-48 lg:h-56 xl:h-64 object-cover rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
+            src="a4.jpg"
+            alt="Image 4"
+          />
+        </div>
+        <div
+          class="w-full sm:w-[45%] md:w-[30%] lg:w-[22%] xl:w-[18%] transition-all duration-300 hover:scale-105"
+        >
+          <img
+            class="w-full h-48 sm:h-56 md:h-48 lg:h-56 xl:h-64 object-cover rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
+            src="a5.jpg"
+            alt="Image 5"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="course"
+      class="relative py-10 bg-[url('wall.jpg')] bg-center bg-fixed bg-cover w-full max-w-full"
+    >
+      <!-- White overlay -->
+      <div class="absolute inset-0 bg-white/90 z-0"></div>
+
+      <!-- Content -->
+      <div class="relative z-10">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          class="font-bold text-2xl text-[#1d3557] text-center py-10"
+        >
+          <h1 class="md:text-4xl text-xl">COURSE OFFERED</h1>
+        </div>
+
+        <div class="grid grid-cols-1 gap-10 place-items-center px-4 md:px-6">
+          <div class="text-left md:flex md:gap-20 md:justify-evenly">
+            <!-- Card 1 -->
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+              class="mt-3"
+            >
+              <h3 class="text-lg font-semibold text-[#003049]">
+                Automotive Servicing NCI
+              </h3>
+              <time class="block mb-2 text-sm text-black dark:text-gray-500">
+                59 days
+              </time>
+              <p class="text-base text-gray-500 dark:text-gray-900">
+                Learn basics troubleshooting,<br />
+                Pre Maintenance Servicing
+              </p>
+              <p class="text-base text-gray-500 dark:text-gray-900">
+                and Pre delivery inspection.
+              </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+              class="mt-3"
+            >
+              <h3 class="text-lg font-semibold text-[#003049]">
+                Automotive Servicing NCII
+              </h3>
+              <time class="block mb-2 text-sm text-gray-400 dark:text-gray-500">
+                60 days
+              </time>
+              <p class="text-base text-gray-200 dark:text-gray-900">
+                Electrical and Engine Repair and <br />
+                on the job training for 30 days.
+              </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+              class="mt-3"
+            >
+              <h3 class="text-lg font-semibold text-[#003049]">
+                Electrical Installation and <br />
+                Maintenance NCII
+              </h3>
+              <time class="block mb-2 text-sm text-gray-400 dark:text-gray-500">
+                25 days
+              </time>
+              <p class="text-base text-gray-500 dark:text-gray-900">
+                Learn how to install cctv and
+                <br />
+                troubleshoot.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="Scholarship"
+      class="md:bg-center bg-[#edf6f9] py-1 overflow-x-hidden py-10 h-full"
+    >
+      <div
+        class="font-bold text-xl md:text-4xl font-family: Arial text-[#003049] text-center px-4 py-10"
+      >
+        <h1
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+        >
+          HOW TO APPLY?
+        </h1>
+      </div>
+      <div class="grid text-black text-center gap-3 text-xl px-4">
+        <p class="text-black text-center">
+          Here are the <b class="text-[#03045e]">REQUIREMENTS!</b>
+        </p>
+
+        <div class="md:text-left text-left mt-5 md:px-40 text-lg px-5">
+          <p>
+            📌 Certified true copy of <b>Official Transcript of record (TOR)
+</b>
+            <br />
+            📌 Certified true copy of <b>Form 137 (Permanent Record if the
+            candidates previous education is Elementary or Secondary Level)</b>
+            <br />
+            📌<b> PSA birth certificate </b>(xerox copy)
+            <br />
+
+            📌 <b>1x1 ID picture </b>with name tag, with collar and white background
+            (studio type)
+            <br />
+            📌<b> Passport size </b> ID picture with name tag, with collar and white
+            background (studio type)
+          </p>
+          <br />
+          <!-- <p>
+            Beneficiaries should be: 1. Filipino Citizen; 2. Unemployed /
+            underemployed 3. at least 18 years of age at the end of training
+          </p> -->
+        </div>
+
+        <br />
+
+        <div class="md:text-4xl text-2xl py-4 px-4">
+          <p>
+            WE are on a <b class="text-[#03045e]"> FIRST COME </b> and
+            <b class="text-[#03045e]">TO COMPLY, FIRST SERVED BASIS‼️</b>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="staff" class="py-10">
+      <!-- <div class="md:flex md:block hidden  bg-white justify-center">
+        
+         <div class="px-2 mt-20 rounded-2xl flex flex-col items-center">
+          <div
+            class="shadow-lg  bg-[#004e64] rounded-lg bg-gray overflow-hidden w-47 h-80"
+          >
+            <img
+              src="jcccc.png"
+               class="h-60 mt-30 w-50 object-cover"
+              alt="Portrait"
+            />
+          </div>
+        </div>
+
+        <div class="px-2 mt-[-20] rounded-2xl flex flex-col items-center">
+          <div
+           class="shadow-lg  bg-[#004e64] rounded-lg bg-gray overflow-hidden w-47 h-80"
+          >
+            <img
+              src="nnoli.png"
+                  class="h-60 mt-30 w-50 object-cover"
+              alt="Portrait"
+            />
+          </div>
+        </div>
+        <div class="px-2 mt-20 rounded-2xl flex flex-col items-center">
+          <div
+           class="shadow-lg  bg-[#004e64] rounded-lg bg-gray overflow-hidden w-47 h-80"
+          >
+            <img
+              src="jasss.png"
+                class="h-70 mt-20 w-50 object-cover"
+              alt="Portrait"
+            />
+          </div>
+        </div>
+        <div class="px-2 mt-[-20] rounded-2xl flex flex-col items-center">
+          <div
+           class="shadow-lg  bg-[#004e64] rounded-lg bg-gray overflow-hidden w-47 h-80"
+          >
+            <img
+              src="rey.jpg"
+                  class="h-60 mt-30 w-50 object-cover"
+              alt="Portrait"
+            />
+          </div>
+        </div>
+                <div class="px-2 mt-20 rounded-2xl flex flex-col items-center">
+          <div
+            class="shadow-lg  bg-[#004e64] rounded-lg bg-gray overflow-hidden w-47 h-80"
+          >
+            <img
+              src="boss.jpg"
+                 class="h-60 mt-30 w-50 object-cover"
+              alt="Portrait"
+            />
+          </div>
+        </div>
+      </div> -->
+
+      <div class="max-w-7xl mx-auto">
+        <h1
+          class="md:text-4xl text-2xl font-bold text-center mb-2 text-[#004e64] px-2 py-6"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+        >
+          Our Central Panagasinan School of Technology Trainers
+        </h1>
+        <p
+          class="text-lg text-center text-gray-600 mb-10 max-w-3xl mx-auto px-2"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+        >
+          Meet our certified professionals with years of experience in
+          automotive training and industry expertise.
+        </p>
+
+        <div class="md:block hidden md:grid md:grid-cols-4 md:gap-6 md:px-4 px-2">
+          <!-- Card 1 -->
+          <div
+            class="flex flex-col"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+          >
+            <a
+              href="#"
+              class="flex flex-col h-full border border-gray-200 rounded-xl shadow-sm overflow-hidden bg-white card-hover"
+            >
+              <img
+                class="object-cover w-full h-full mx-auto"
+                src="FINALBOSSSSS.jpg"
+                alt="Reynaldo T. Ramos"
+              />
+            </a>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="flex flex-col"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+          >
+            <a
+              href="#"
+              class="flex flex-col h-full border border-gray-200 rounded-xl shadow-sm overflow-hidden bg-white card-hover"
+            >
+              <img
+                class="object-cover w-full h-full mx-auto"
+                src="FERANKK FINANL.jpg"
+                alt="Reynaldo T. Ramos"
+              />
+            </a>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="flex flex-col"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+          >
+            <a
+              href="#"
+              class="flex flex-col h-full border border-gray-200 rounded-xl shadow-sm overflow-hidden bg-white card-hover"
+            >
+              <img
+                class="object-cover w-full h-full mx-auto"
+                src="FINAL SIR REY.jpg"
+                alt="Reynaldo T. Ramos"
+              />
+            </a>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="flex flex-col"
+            data-aos="fade-up"
+            data-aos-duration="2500"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+          >
+            <a
+              href="#"
+              class="flex flex-col h-full border border-gray-200 rounded-xl shadow-sm overflow-hidden bg-white card-hover"
+            >
+              <img
+                class="object-cover w-full h-full mx-auto"
+                src="final larrry.jpg"
+                alt="Reynaldo T. Ramos"
+              />
+            </a>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="flex flex-col"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+          >
+            <a
+              href="#"
+              class="flex flex-col h-full border border-gray-200 rounded-xl shadow-sm overflow-hidden bg-white card-hover"
+            >
+              <img
+                class="object-cover w-full h-full mx-auto"
+                src="fian llal nollililili.jpg"
+                alt="Reynaldo T. Ramos"
+              />
+            </a>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="flex flex-col"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+          >
+            <a
+              href="#"
+              class="flex flex-col h-full border border-gray-200 rounded-xl shadow-sm overflow-hidden bg-white card-hover"
+            >
+              <img
+                class="object-cover w-full h-full mx-auto"
+                src="FINAL JAS.jpg"
+                alt="Reynaldo T. Ramos"
+              />
+            </a>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="flex flex-col"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+          >
+            <a
+              href="#"
+              class="flex flex-col h-full border border-gray-200 rounded-xl shadow-sm overflow-hidden bg-white card-hover"
+            >
+              <img
+                class="object-cover w-full h-full mx-auto"
+                src="JCC.jpg"
+                alt="Reynaldo T. Ramos"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="controls-carousel"
+        class="relative w-full md:hidden block"
+        data-carousel="static"
+      >
+        <!-- Carousel wrapper -->
+        <div class="relative h-100 overflow-hidden rounded-lg md:h-96">
+          <!-- Item 1 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <div
+              class="shadow-lg bg-[#004e64] rounded-lg bg-gray overflow-hidden"
+            >
+              <img
+                 src="FERANKK FINANL.jpg"
+                class="h-full w-full w-full object-cover"
+                alt="Portrait"
+              />
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div
+            class="hidden duration-700 ease-in-out"
+            data-carousel-item="active"
+          >
+            <img
+             src="FINALBOSSSSS.jpg"
+             
+              class="h-100 w-full absolute block w-100 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
+            />
+          </div>
+          <!-- Item 3 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="FINAL SIR REY.jpg"
+              class="h-100 w-full absolute block w-100 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
+            />
+          </div>
+          <!-- Item 4 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="final larrry.jpg"
+              class="h-100 w-full absolute block w-100 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
+            />
+          </div>
+          <!-- Item 5 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="FINAL JAS.jpg"
+              class="h-100 w-full absolute block w-100 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
+            />
+          </div>
+
+          <!-- Item 5 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="fian llal nollililili.jpg"
+              class="h-100 w-full absolute block w-100 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
+            />
+          </div>
+
+          <!-- Item 5 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="JCC.jpg"
+              class="h-100 w-full absolute block w-100 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
+            />
+          </div>
+        </div>
+        <!-- Slider controls -->
+        <button
+          type="button"
+          class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-prev
+        >
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+          >
+            <svg
+              class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 6 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 1 1 5l4 4"
+              />
+            </svg>
+            <span class="sr-only">Previous</span>
+          </span>
+        </button>
+        <button
+          type="button"
+          class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-next
+        >
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+          >
+            <svg
+              class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 6 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 9 4-4-4-4"
+              />
+            </svg>
+            <span class="sr-only">Next</span>
+          </span>
+        </button>
+      </div>
+    </section>
+
+    <section
+      id="About"
+      class="relative bg-[#a2d9ff] overflow-x-hidden mx-auto bg-[url('bg.png')] bg-center bg-fixed bg-cover w-full max-w-full"
+    >
+      <div class="absolute inset-0 bg-[#003049]/80 z-0"></div>
+      <div
+        class="font-bold md:text-4xl font-family: Arial text-center text-xl py-10"
+      >
+        <!-- ade8f4 -->
+        <h1
+          data-aos="fade-down"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          class="relative text-white"
+        >
+          ABOUT US
+        </h1>
+      </div>
+
+      <div
+        class="grid gap-10 px-10 py-10 md:flex md:flex-wrap md:justify-evenly relative text-white"
+      >
+        <div>
+          <b>Location</b>
+          <p>Montemayor St. Brgy. Poblacion</p>
+          <p>Malasiqui, Philippines</p>
+        </div>
+
+        <div>
+          <b>Contact us</b>
+          <p>0917 508 8152</p>
+          <p>cpst1974@yahoo.com</p>
+        </div>
+
+        <div>
+          <b>Follow Us</b>
+          <br />
+          <a
+            href="https://www.facebook.com/profile.php?id=100089638538257"
+            class="underline"
+            >Facebook Page</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
